@@ -7,7 +7,7 @@ class Hero extends React.Component {
     render() {
         return (
             <div className="heroBG">
-                <h1>hello</h1>
+                <h1>hellos</h1>
             </div>
         );
     }

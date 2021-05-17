@@ -1,7 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body,html{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-color: #F1F1F1;
+}
+
 .heroBG{
     background-image: url("../images/bg.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+.container{
+    max-width: 1200px;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.card{
+    border: 2px solid #4E53E9;
+    border-top-width:30px;
+}
+
+button{
+    color: #4E53E9;
+    background-color: white;
+    border: none;
+    transition: .3s ease;
+}
+
+// .btn-primary:hover{
+//     color: #4E53E9;
+//     background-color: white;
+//     border: none;
+// }
+
+// .btn-primary:active{
+//     color: #4E53E9;
+//     background-color: white;
+//     border: none;
+// }
+
+.card-header{
+    background-color: white;
+    border-bottom: 1px solid rgba(78, 83, 233, .5);
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.card-body{
+    border: none;
+}
+
+.accordion{
+    transition: .3s ease;
+    width: fit-content !important;
+    margin-top: 30px;
+    position: relative;
+}
+
+.collapsing{
+    transition: .3s ease;
+}
+
+.btn:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.down-arrow{
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+
+.topbar{
+    position: absolute;
+    width: 50px;
+    top: 7px;
+    left: 5px;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.page-title{
+    font-weight: 900;
+    font-size: 72px;
+    color: #252BE7;
+}
+
+.page-subheader{
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 18px;
+    color: #181F27;
+}
+
+.team-pic{
+    margin: auto;
+    display: block;
 }
