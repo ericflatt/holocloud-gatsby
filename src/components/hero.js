@@ -21,7 +21,7 @@ class Hero extends React.Component {
           <Draggable>
           <div className="drag-wrapper">
             <div>
-                <img id="target" onMouseDown={this.handleMouseDown()} className="home-image" src={what} alt="home" />
+                <img id="target" className="home-image" src={what} alt="home" />
             </div>
           </div>
         </Draggable>
