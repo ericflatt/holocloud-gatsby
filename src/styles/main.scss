@@ -8,6 +8,10 @@ body{
     background-color: #F1F1F1;
 }
 
+img{
+    pointer-events: none;
+}
+
 .heroBG{
     background-image: url("../images/bg.png");
     background-size: cover;
@@ -105,4 +109,49 @@ button{
 .team-pic{
     margin: auto;
     display: block;
+}
+
+.pricing{
+    border: 2px solid #4E53E9;
+    padding: 15px;
+    border-radius: .25em;
+    background-color: white;
+}
+
+.buy-device{
+    display: flex;
+    align-items: center;
+}   
+
+.device-image{
+    width: 40%;
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+
+.pricing-p{
+    font-weight: 900;
+    color: #4E53E9;
+}
+
+.money{
+    color: #4E53E9;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.cart-button{
+    background-color: #6684EF;
+    padding: 10px 60px;
+    color: white;
+    border-radius: .25em;
+
+    :hover{
+        color: white;
+    }
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
 }
