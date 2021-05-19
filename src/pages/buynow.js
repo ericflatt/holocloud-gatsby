@@ -3,12 +3,14 @@ import { Link } from "gatsby"
 import device from "../images/device.png"
 import shapes from "../images/shapes.png"
 import boxes from "../images/boxes.svg"
+import Nav from "../components/nav"
 
 import Seo from "../components/seo"
 
 const BuyNow = () => (
     <div className="">
-        <Seo title="FAQ" />
+        <Nav />
+        <Seo title="Buy Now" />
         <div className="container">
             <p className="page-subheader">BUY NOW</p>
             <h1 className="page-title">holo-cloud system</h1>

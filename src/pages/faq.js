@@ -6,14 +6,17 @@ import Card from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import down from "../images/downArrow.svg"
 import topbar from "../images/topbar.svg"
-
+import Nav from "../components/nav"
 
 import Seo from "../components/seo"
 
 const FAQ = () => (
-  <div className="container">
+<div>
+<Nav />
+  <div style={{marginTop:"100px",marginBottom:"100px"}} className="container">
+    
     <Seo title="FAQ" />
-    <p className="page-subheader">FREQUENTLY ASKED QUESTIONS (FAQ)</p>
+    <p  className="page-subheader">FREQUENTLY ASKED QUESTIONS (FAQ)</p>
     <h1 className="page-title">Your questions, answered.</h1>
     <Accordion>
     <img className="topbar" src={topbar} alt="topbar" />
@@ -93,9 +96,9 @@ const FAQ = () => (
     </Accordion.Collapse>
   </Card>
 </Accordion>
-    <Link to="/">Go back to the homepage</Link>
+   
   </div>
-
+  </div>
 )
 
 export default FAQ

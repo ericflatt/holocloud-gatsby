@@ -21,7 +21,7 @@ img {
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: center;
+//   justify-content: center;
   overflow: hidden;
   position: relative;
 }
@@ -158,7 +158,6 @@ button {
 }
 
 a:hover {
-  color: white;
   text-decoration: none;
 }
 
@@ -186,6 +185,15 @@ a:hover {
   display: block;
   margin: auto;
 }
+
+.outline-text-hero {
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #252be7;
+    font-size: 150px;
+    margin-left: 100px;
+  }
 
 .device {
   width: 85%;
@@ -240,4 +248,85 @@ a:hover {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+}
+
+.home-button-light{
+    padding: 10px 60px;
+    background-color: #A7A7EC;
+    color: white;
+    margin-left: auto;
+    border-radius: .25em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.home-button{
+    padding: 10px 60px;
+    background-color: #252BE7;
+    color: white;
+    margin-left: auto;
+    border-radius: .25em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.home-nav{
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+// .features{
+//     background-image: url("../images/features.png");
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     height: 100%;
+// }
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    // position: fixed;
+    width: 100%;
+}
+
+.nav-item{
+    margin: 0 25px;
+    color: #6E7379;
+    transition: .3s ease;
+    font-weight: 900;
+
+    :hover{
+        color: #252BE7 !important;
+    }
+}
+
+.logo{
+    margin-left: 25px;
+}
+
+.nav-links{
+    margin-left: auto;
+}
+
+.home-button-circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button{
+    width: 5%;
+    z-index: 999;
+    position: fixed;
+    left: 10px;
 }
