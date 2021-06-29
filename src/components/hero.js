@@ -7,7 +7,7 @@ import illone from "../images/illone.png"
 import illtwo from "../images/illtwo.png"
 import goal from "../images/goal.svg"
 import { Link } from "gatsby"
-import video from "../images/video.mp4"
+import videonew from "../images/video.mp4"
 import $ from "jquery"
 
 import homebutton from "../images/homebutton.svg"
@@ -51,7 +51,7 @@ class Hero extends React.Component {
             <div className="drag-wrapper">
               <div>
               <video controls id="myVideo" poster={videoplace} width="100%" >
-          <source src={video} alt="video"  />
+          <source src={videonew} alt="video"  />
           </video>
                 {/* <img className="home-image" src={video} alt="home" /> */}
               </div>
