@@ -19,7 +19,7 @@ class Hero extends React.Component {
             this.removeAttribute("controls")
         } else {
             this.setAttribute("controls", "controls")
-        }
+        } 
     })
     }
   render() {
@@ -56,7 +56,7 @@ class Hero extends React.Component {
                 {/* <img className="home-image" src={video} alt="home" /> */}
               </div>
             </div>
-          </Draggable>
+          </Draggable> 
 
           <Draggable>
             <div className="drag-wrapper">
