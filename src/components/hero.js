@@ -7,7 +7,7 @@ import illone from "../images/illone.png"
 import illtwo from "../images/illtwo.png"
 import goal from "../images/goal.svg"
 import { Link } from "gatsby"
-import videonew from "../images/video.mp4"
+import videonew from "../images/videonew.mp4"
 import $ from "jquery"
 
 import homebutton from "../images/homebutton.svg"
