@@ -2,17 +2,26 @@ import React from "react"
 import Draggable from "react-draggable"
 import what from "../images/what.svg"
 import devicehome from "../images/devicehome.png"
-import video from "../images/videoplaceholder.png"
+import videoplace from "../images/videoplaceholder.png"
 import illone from "../images/illone.png"
 import illtwo from "../images/illtwo.png"
 import goal from "../images/goal.svg"
 import { Link } from "gatsby"
+import video from "../images/video-1.mp4"
+import $ from "jquery"
 
 import homebutton from "../images/homebutton.svg"
 
 class Hero extends React.Component {
-  //   componentDidMount() {
-  //   }
+    componentDidMount() {
+      $('#myvideo').hover(function toggleControls() {
+        if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls")
+        } else {
+            this.setAttribute("controls", "controls")
+        }
+    })
+    }
   render() {
     return (
       <div className="heroBG">
@@ -38,13 +47,17 @@ class Hero extends React.Component {
           </div>
         </div>
         <div className="six-column-grid">
-          <Draggable>
+        <Draggable>
             <div className="drag-wrapper">
               <div>
-                <img id="target" className="home-image" src={what} alt="home" />
+              <video controls id="myVideo" poster={videoplace} width="100%" >
+          <source src={video} alt="video"  />
+          </video>
+                {/* <img className="home-image" src={video} alt="home" /> */}
               </div>
             </div>
           </Draggable>
+
           <Draggable>
             <div className="drag-wrapper">
               <div>
@@ -62,7 +75,7 @@ class Hero extends React.Component {
           <Draggable>
             <div className="drag-wrapper">
               <div>
-                <img className="home-image" src={video} alt="home" />
+                <img id="target" className="home-image" src={what} alt="home" />
               </div>
             </div>
           </Draggable>
